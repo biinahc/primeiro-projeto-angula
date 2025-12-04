@@ -1,0 +1,11 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-titulo',
+  imports: [],
+  templateUrl: './titulo.html',
+  styleUrl: './titulo.scss',
+})
+export class Titulo {
+
+}

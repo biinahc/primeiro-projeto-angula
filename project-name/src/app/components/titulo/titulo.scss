@@ -1,0 +1,62 @@
+.section-title {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin: 2rem 0;
+}
+hh
+
+.section-title__heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff0066;
+  margin-bottom: .5rem;
+  letter-spacing: .6px;
+
+  position: relative;
+  display: inline-block;
+}
+
+/* Linha decorativa sob o título */
+.section-title__heading::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: #ff0066;
+  margin: .4rem auto 0;
+  border-radius: 4px;
+  opacity: .9;
+  animation: underlineIn .6s ease-out;
+}
+
+.section-title__description {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #333;
+  max-width: 650px;
+  margin: .5rem auto 0;
+  opacity: .85;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .section-title__heading {
+    font-size: 1.7rem;
+  }
+
+  .section-title__description {
+    font-size: 1rem;
+  }
+}
+
+/* ANIMAÇÃO */
+@keyframes underlineIn {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 50%;
+    opacity: .9;
+  }
+}

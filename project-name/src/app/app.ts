@@ -1,13 +1,20 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Navbar } from './navbar/navbar';
-import { Apresentacao } from './components/apresentacao/apresentacao';
+import { Navbar } from './components/navbar/navbar';
+// import { Apresentacao } from './components/apresentacao/apresentacao';
+import { Descricao } from './components/descricao/descricao';
+import { Header } from './components/header/header';
+import { Titulo } from './components/titulo/titulo';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet,
   Navbar,
-  Apresentacao
+  Header,
+  // Apresentacao,
+  Descricao,
+  
+  Titulo
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'

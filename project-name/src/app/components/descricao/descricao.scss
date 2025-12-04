@@ -1,0 +1,36 @@
+.section-description {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+
+.section-description__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff0066;
+  margin-bottom: 1rem;
+
+  position: relative;
+  display: inline-block;
+}
+
+/* Linha decorativa suave */
+.section-description__title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #ff0066;
+  margin-top: .3rem;
+  border-radius: 3px;
+  opacity: .9;
+}
+
+.section-description__text {
+  font-size: 1.15rem;
+  color: #333;
+  margin-bottom: 1rem;
+  opacity: .85;
+  text-align: justify;
+}
